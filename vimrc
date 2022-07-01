@@ -13,3 +13,8 @@ set ruler
 set tabstop=4
 set shiftwidth=4
 set expandtab
+
+" Set the backspace to delete normally
+set backspace=indent,eol,start
+
+
