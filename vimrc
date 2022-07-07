@@ -1,5 +1,9 @@
-" Turn on syntax highlighting
-syntax on
+call plug#begin()
+
+Plug 'ayu-theme/ayu-vim'
+Plug 'preservim/nerdtree'
+
+call plug#end()
 
 " Use new regular expression engine for TypeScript syntax highlighting
 set re=0
@@ -17,4 +21,6 @@ set expandtab
 " Set the backspace to delete normally
 set backspace=indent,eol,start
 
-
+set termguicolors
+let ayucolor="light"
+colorscheme ayu
