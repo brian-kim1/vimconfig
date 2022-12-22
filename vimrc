@@ -1,7 +1,7 @@
 " Turn on line numbers
 set number
 
-" Show file stats
+Show file stats
 set ruler
 
 set tabstop=4
@@ -24,6 +24,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-commentary'
 Plug 'machakann/vim-highlightedyank'
 Plug 'justinmk/vim-sneak'
+call plug#end()
 
 " On-demand loading
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
