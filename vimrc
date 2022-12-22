@@ -1,5 +1,3 @@
-set re=0
-
 " Turn on line numbers
 set number
 
