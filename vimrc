@@ -1,7 +1,7 @@
 " Turn on line numbers
 set number
 
-Show file stats
+" Show file stats
 set ruler
 
 set tabstop=4
