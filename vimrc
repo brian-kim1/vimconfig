@@ -1,6 +1,8 @@
 " Turn on line numbers
 set number
 
+syntax on
+
 " Show file stats
 set ruler
 
