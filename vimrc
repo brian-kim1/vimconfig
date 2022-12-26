@@ -1,7 +1,7 @@
 " Turn on line numbers
 set number
 
-let mapleader="\<Space>"
+let mapleader=","
 
 syntax on
 
@@ -44,6 +44,9 @@ call plug#end()
 " gy - go to type's definition
 " gi - go to implementation (if you're on a method)
 " gr - find references 
+" :CocInstall coc-pyright
+" :CocInstall coc-java
+" :CocInstall coc-rust-analyzer
 source ~/.vim/coc.vimrc
 
 " Confiure highlightedyank highlight duration
