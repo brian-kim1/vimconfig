@@ -5,6 +5,8 @@ let mapleader=","
 
 syntax on
 
+" set mouse=a
+
 " Show file stats
 set ruler
 
@@ -54,10 +56,4 @@ let g:highlightedyank_highlight_duration = 1500
 
 " Enable labels for vim-sneak
 let g:sneak#label = 1
-
-" NERDTree shortcuts
-nnoremap <leader>n :NERDTreeFocus<CR>
-nnoremap <C-n> :NERDTree<CR>
-nnoremap <C-t> :NERDTreeToggle<CR>
-nnoremap <C-f> :NERDTreeFind<CR>
 
