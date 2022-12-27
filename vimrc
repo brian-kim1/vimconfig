@@ -57,3 +57,6 @@ let g:highlightedyank_highlight_duration = 1500
 " Enable labels for vim-sneak
 let g:sneak#label = 1
 
+" maps <c-d> and <c-u> to scroll a popup window
+nnoremap <expr> <c-d> popup#scroll_cursor_popup(1) ? '<esc>' : '<c-d>'
+nnoremap <expr> <c-u> popup#scroll_cursor_popup(0) ? '<esc>' : '<c-u>'
