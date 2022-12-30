@@ -1,8 +1,6 @@
 " Turn on line numbers
 set number
 
-let mapleader=","
-
 syntax on
 
 " set mouse=a
@@ -56,6 +54,12 @@ let g:highlightedyank_highlight_duration = 1500
 
 " Enable labels for vim-sneak
 let g:sneak#label = 1
+
+" Remap , -> \ for vim-sneak
+map <Bslash> <Plug>Sneak_,
+
+" Remap leader key
+let mapleader=","
 
 " maps <c-d> and <c-u> to scroll a popup window
 nnoremap <expr> <c-d> popup#scroll_cursor_popup(1) ? '<esc>' : '<c-d>'
