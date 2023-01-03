@@ -18,6 +18,9 @@ set t_md=
 " Set the backspace to delete normally
 set backspace=indent,eol,start
 
+" Map <Del> key
+inoremap <C-d> <Del>
+
 " Highlight all occurrences of word
 set hlsearch
 
