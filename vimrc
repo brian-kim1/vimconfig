@@ -3,6 +3,9 @@ set number
 
 syntax on
 
+" Remap leader key
+let mapleader=","
+
 " set mouse=a
 
 " Show file stats
@@ -13,7 +16,7 @@ set shiftwidth=4
 set expandtab
 
 " Remove bold
-set t_md=
+" set t_md=
 
 " Set the backspace to delete normally
 set backspace=indent,eol,start
@@ -60,9 +63,6 @@ let g:sneak#label = 1
 
 " Remap , -> \ for vim-sneak
 map <Bslash> <Plug>Sneak_,
-
-" Remap leader key
-let mapleader=","
 
 " maps <c-d> and <c-u> to scroll a popup window
 nnoremap <expr> <c-d> popup#scroll_cursor_popup(1) ? '<esc>' : '<c-d>'
