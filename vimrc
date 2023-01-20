@@ -36,7 +36,19 @@ Plug 'tpope/vim-commentary'
 Plug 'machakann/vim-highlightedyank'
 Plug 'justinmk/vim-sneak'
 Plug 'preservim/nerdtree'
+
+" colorschemes
+Plug 'morhetz/gruvbox'
+Plug 'arzg/vim-colors-xcode'
+Plug 'ajmwagar/vim-deus'
+Plug 'sainnhe/sonokai'
 call plug#end()
+
+" 256 color palette
+set t_Co=256
+set background=dark
+set termguicolors
+colorscheme deus
 
 " ^\w*map - to see all available commands
 " ctrl i o = go back and forth between files
