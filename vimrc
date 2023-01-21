@@ -73,7 +73,7 @@ let g:sneak#label = 1
 
 " Turn on absolute and relative line numbers
 set number
-RltvNmbr
+au VimEnter * RltvNmbr
 
 " Remap , -> \ for vim-sneak
 map <Bslash> <Plug>Sneak_,
