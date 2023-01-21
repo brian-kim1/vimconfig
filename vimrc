@@ -1,6 +1,3 @@
-" Turn on line numbers
-set number
-
 syntax on
 
 " Remap leader key
@@ -25,7 +22,7 @@ set backspace=indent,eol,start
 inoremap <C-d> <Del>
 
 " Highlight all occurrences of word
-set hlsearch
+" set hlsearch
 
 call plug#begin()
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -36,6 +33,7 @@ Plug 'tpope/vim-commentary'
 Plug 'machakann/vim-highlightedyank'
 Plug 'justinmk/vim-sneak'
 Plug 'preservim/nerdtree'
+Plug 'https://github.com/vim-scripts/RltvNmbr.vim'
 " colorschemes
 Plug 'morhetz/gruvbox'
 Plug 'arzg/vim-colors-xcode'
@@ -72,6 +70,10 @@ let g:highlightedyank_highlight_duration = 1500
 
 " Enable labels for vim-sneak
 let g:sneak#label = 1
+
+" Turn on absolute and relative line numbers
+set number
+RltvNmbr
 
 " Remap , -> \ for vim-sneak
 map <Bslash> <Plug>Sneak_,
