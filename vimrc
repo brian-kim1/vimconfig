@@ -5,6 +5,9 @@ let mapleader=","
 
 " set mouse=a
 
+" Disable auto-comment of next line following a commented line
+:set formatoptions-=cro
+
 " Show file stats
 set ruler
 
@@ -46,7 +49,7 @@ call plug#end()
 set t_Co=256
 set background=dark
 set termguicolors
-colorscheme deus
+colorscheme gruvbox
 
 " ^\w*map - to see all available commands
 " ctrl i o = go back and forth between files
