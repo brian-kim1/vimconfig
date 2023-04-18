@@ -5,8 +5,10 @@ let mapleader=","
 
 " set mouse=a
 
+set smartindent
+
 " Disable auto-comment of next line following a commented line
-:set formatoptions-=cro
+set formatoptions-=cro
 
 " Show file stats
 set ruler
@@ -31,8 +33,9 @@ call plug#begin()
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
-Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fugitive'
+Plug 'jiangmiao/auto-pairs'
 Plug 'machakann/vim-highlightedyank'
 Plug 'justinmk/vim-sneak'
 Plug 'preservim/nerdtree'
@@ -84,3 +87,6 @@ map <Bslash> <Plug>Sneak_,
 " maps <c-d> and <c-u> to scroll a popup window
 nnoremap <expr> <c-d> popup#scroll_cursor_popup(1) ? '<esc>' : '<c-d>'
 nnoremap <expr> <c-u> popup#scroll_cursor_popup(0) ? '<esc>' : '<c-u>'
+
+" Configure terminal tab to show Vim filename
+source ~/.vim/show_filenames_in_tabs.vimrc
